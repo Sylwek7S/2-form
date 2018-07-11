@@ -1,0 +1,23 @@
+h1{
+    color: #1c1c67;
+}
+h2{
+    color: #4e4ef7;
+}
+
+
+#customer-info, #books
+{
+    padding: 20px 50px;
+    border: 1px solid #000;
+    margin: 10px 0;
+    width: 600px;
+}
+input[type="number"]
+{
+    width: 160px;
+}
+
+
+
+

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>2-formularz</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <form action="https://formspree.io/sylwesterszydlo@interia.pl" method="POST" autocomplete="on">
+        <header>
+            <h1>A simple form</h1>
+            <h2><i>Form Fundamentals</i></h2>
+        </header>
+        
+        <p>customer-info</p>
+        <div id="customer-info">
+            
+            <label for="name">Name: </label>
+            <input type="text" name="name" placeholder="Enter Your Name" autofocus required>
+            <br><br>
+            
+            <label for="tel">Telephone: </label>
+            <input type="tel" name="tel" placeholder="Pattern: 1-234-567-8910" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+            <br><br>
+            
+            <label for="email">Email adress: </label>
+            <input type="email" name="email" placeholder="Enter Your E-mail Adress" required>
+            <br><br>
+            
+        </div>
+        
+        <p>books</p>
+        <div id="books">
+            
+            
+            <input list="browsers" name="browser">
+            <datalist id="browsers">
+                <option value="value1"></option>
+                <option value="value2"></option>
+                <option value="value3"></option>
+                <option value="value4"></option>
+                <option value="value5"></option>
+            </datalist>
+            
+            <label for="number">Quanity (Maximum 5):</label>
+            <input type="number" min="1" max="5">
+        </div>
+        <br>
+        <input type="submit" value="submit"></button>
+    </form>
+
+
+</body>
+
+</html>
